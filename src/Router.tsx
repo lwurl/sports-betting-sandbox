@@ -1,7 +1,7 @@
 import React from "react";
 import { Router } from "@reach/router";
-import Home from "./Home";
-import SecondScreen from "./SecondScreen";
+import Home from "./pages/Home";
+import SecondScreen from "./pages/SecondScreen";
 
 function HomeRouter() {
   return (
