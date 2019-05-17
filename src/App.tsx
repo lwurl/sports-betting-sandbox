@@ -1,23 +1,16 @@
 import React from "react";
 import HomeRouter from "./Router";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#018499"
-    }
-  },
-  typography: {
-    fontFamily: ["Quicksand", "sans-serif"].join(",")
-  }
-});
+import { MuiThemeProvider } from "@material-ui/core/styles";
+import theme from "./theme";
+import app, { FirebaseContext } from "./components/Firebase";
 
 const App: React.FC = () => {
   return (
-    <MuiThemeProvider theme={theme}>
-      <HomeRouter />
-    </MuiThemeProvider>
+    <FirebaseContext.Provider value={app}>
+      <MuiThemeProvider theme={theme}>
+        <HomeRouter />
+      </MuiThemeProvider>
+    </FirebaseContext.Provider>
   );
 };
 
