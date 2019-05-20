@@ -1,0 +1,10 @@
+/
+  /odds
+    last_updated
+    /sports
+      sport_name
+      sport_id
+      games_today
+    /games
+      /sport_id
+        response
