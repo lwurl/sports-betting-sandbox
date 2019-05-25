@@ -1,12 +1,12 @@
 import React from "react";
 import { Router } from "@reach/router";
-import Home from "./pages/Home";
+import Wager from "./pages/Wager";
 import SecondScreen from "./pages/SecondScreen";
 
 function HomeRouter() {
   return (
     <Router>
-      <Home path="/" />
+      <Wager path="/" />
       <SecondScreen path="dashboard" />
     </Router>
   );
